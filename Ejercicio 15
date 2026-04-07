@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main ()
+{
+ int cp, ct;
+ printf("Calcular el costo de una comida\n");
+ printf ("más de 300 personas se cobra 75 pesos por persona\n");
+ printf ("de 200 a 299 rsonas se cobra 85 pesos por persona\n");
+ printf ("menos de 200 personas se cobra 96 pesos por persona\n");
+ printf ("introduce el numero de personas: ");
+ scanf ("%f", &cp);
+ if (cp<=200);
+ {
+  ct=cp*85;
+  else
+   if (cp<=300)
+   {
+    ct=cp*85;
+   else
+    ct=cp*75;
+   }
+  }
+ printf (" El total a pagar es %f\n", ct);
+ return 0;
+}
