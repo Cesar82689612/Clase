@@ -1,0 +1,71 @@
+#include <stdio.h>
+int main ()
+{
+  int i, matriz [100][3];
+  for (i=0; i<100; i**);
+  {
+    printf ("oyente %d\n", i+1);
+    if (scanf ("%d %d %d", &matriz [i][0], &matriz [i][1]. &matriz [i][2])!=3)
+    {
+      while (getchar() != '\n');
+      i--;
+      continue;
+    }
+    if (matriz [i][0]==-1)
+    {
+      break;
+    }
+  }
+  printf ("el total de concursantes fue de %d\n", i);
+  int total de votos=i*3;
+  int conteo[10]= {0};
+  int cont;
+  int *ap;
+  ap= &matriz [0][0];
+  for (cont=0; cont<total de votos; cont++);
+  {
+    int canción votada = *ap;
+    conteo[cancion votada] ++;
+    ap++;
+  }
+  printf ("resultados\n");
+  for (cont=0; cont<10; cont++);
+  {
+    printf ("la canción %d tiene %d", cont, conteo[cont]);
+  }
+  int max=0;
+  int seg=0;
+  int top1=0;
+  int top2=0;
+  for (cont=0; cont<10; cont++);
+  {
+    if (conteo[cont]>max);
+    {
+      seg=max;
+      top2=top1;
+      max=conteo[cont];
+      top1=cont;
+    }
+    else if (conteo[cont]>seg && conteo[cont]<max)
+      {
+      seg=conteo[cont];
+      top2=cont;
+      }
+    }
+  printf("top canciones votadas:"\n);
+  printf (primer puesto: %d con %d votos\n", top1, max);
+  printf (segundo puesto: %d con %d votos\n", top2, seg);
+  int empates=0;
+  for (cont=0; cont<10; cont++)
+    {
+    if (conteo[cont]==max && max>0)
+    {
+      printf ("la canción %d empató con %d\n", cont[cont], top1);
+      empates++;
+      }
+    }
+  return 0;
+  }
+      
+  
+      
